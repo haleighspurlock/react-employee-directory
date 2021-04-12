@@ -4,7 +4,9 @@ const BASEURL = 'https://randomuser.me/api/?results=30';
 
 const search = {
     getAllUsers: function() {
-        return axios.get(BASEURL);
+        return axios.get(BASEURL).then(({data}) =>{
+            return data.results
+        })
     }
 };
 
