@@ -1,12 +1,17 @@
 import React from 'react';
 import Header from './components/Header';
-import Table from './components/Table';
+import EmployeeDirectory from './components/EmployeeDirectory';
 
 function App() {
   return (
     <>
-      <Header />
-      <Table />
+      <div style={{
+        paddingLeft: 50,
+        paddingRight: 50
+      }}>
+        <Header />
+        <EmployeeDirectory />
+      </div>
     </>
   );
 }
