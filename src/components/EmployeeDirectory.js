@@ -13,7 +13,7 @@ const EmployeeDirectory = () => {
     return (
     <>
         <Form>
-            <Form.Control type='text' placeholder='Search Employee' onInput={employeeInputSearch} />
+            <Form.Control type='text' placeholder='Search Employee' onInput={employeeInputSearch} style={{cursor: 'pointer'}}/>
         </Form>
         <EmployeeTable filter={searchedEmployee}/>
     </>
