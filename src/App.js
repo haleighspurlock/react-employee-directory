@@ -1,17 +1,15 @@
 import React from 'react';
 import Header from './components/Header';
 import EmployeeDirectory from './components/EmployeeDirectory';
+import { Container } from 'react-bootstrap'
 
 function App() {
   return (
     <>
-      <div style={{
-        paddingLeft: 50,
-        paddingRight: 50
-      }}>
+    <Container>
         <Header />
         <EmployeeDirectory />
-      </div>
+    </Container>
     </>
   );
 }
